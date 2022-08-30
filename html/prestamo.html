@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1º entraga del proyecto</title>
+</head>
+<body>
+    <section>
+        <h1>Banco de prestamos</h1>
+        <h3>Hola le informamos que nuestras cuotas cuentan con un 20% de interes y que solo contamos con cuotas de 3, 9 y 12 </h3>
+        
+        <h2>Ingrese la cantidad de plata que desea pedir de prestamo</h2>
+        <input type="number" name="number" id="usuario_cantidad">
+        
+
+        <h2>Ingresa la cantidad de cuotas en las que desea pagar</h2>
+        
+        <select name="select" id="usuario_cuotas">
+            <option value="0">CUOTAS</option>
+            <option value="3">3</option>
+            <option value="9">9</option>
+            <option value="12">12</option>
+        </select>
+        
+        <h2>las cuotas se deberan pagar al final de cada mes con el interes sumado es de :</h2>
+        <button id="cal" >CALCULAR</button>
+        <div id="mensaje">
+
+        </div>
+    </section>
+    
+    <script type= "module" src="../js/javascript.js"></script>
+</body>
+</html>
