@@ -43,4 +43,4 @@ boton_registrar.addEventListener("click" , validar)
 
 fetch("https://api.openweathermap.org/data/2.5/weather?q=Buenos Aires&units=metric&appid=07284271e0f99391f3e0ff7d293ae933") 
     .then(response=> response.json())
-    .then(data=>document.getElementById(`tiempo`).innerHTML=`<h2>la temperatura que hay en la ciudad de Buenos Aires es de: ${data.main.temp}</h2>`)
+    .then(data=>document.getElementById(`tiempo`).innerHTML=`<h2>la temperatura que hay en la ciudad de Buenos Aires es de: ${data.main.temp}°C</h2>`)

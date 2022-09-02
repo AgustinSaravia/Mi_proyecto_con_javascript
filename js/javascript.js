@@ -1,27 +1,34 @@
+let boton_calcular = document.getElementById("cal")
+boton_calcular.addEventListener("click" , intereses)
+
+let r1 = document.getElementById("mensaje")
+let r2 = document.getElementById("mensaje2")
 
 function intereses(){
 
-    let cantidad = document.getElementById("usuario_cantidad").value
-    let cuotas = document.getElementById("usuario_cuotas").value
+    let cantidad = parseFloat (document.getElementById("usuario_cantidad").value)
+    let cuotas = parseFloat (document.getElementById("usuario_cuotas").value)
     let int = cantidad * 0.20;
-    let total = parseInt (cantidad) + parseInt (int);
-    
-    
     
     if(cuotas == 3){
+        let total = parseInt (cantidad) + parseInt (int);
         let max = total / cuotas;
-        return max
+        r1.innerHTML= `El total a pagar por mes es: ${max}`
+        r2.innerText= `El total a pagar todo es: ${total}`
+        
     }
     else if(cuotas == 9){
+        let total = parseInt (cantidad) + parseInt (int);
         let max = total / cuotas;
-        console.log("eligio pagar en 9 cuotas, asi que al final de cada mes debera pagar:" , max )
-        return max
+        r1.innerHTML= `El total a pagar por mes es: ${max}`
+        r2.innerText= `El total a pagar todo es: ${total}`
+
     }
     else(cuotas == 12);{
+        let total = parseInt (cantidad) + parseInt (int);
         let max = total / cuotas;
-        console.log("eligio pagar en 12 cuotas, asi que al final de cada mes debera pagar:" , max )
-        return max
+        r1.innerHTML= `El total a pagar por mes es: ${max}`
+        r2.innerText= `El total a pagar todo es: ${total}`
     }
 }
-let boton_calcular = document.getElementById("cal")
-boton_calcular.addEventListener("click" , intereses)
+

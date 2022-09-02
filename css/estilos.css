@@ -1,6 +1,4 @@
 
-
-
 .contenedor{
     display: flex;
     justify-content: center;
@@ -26,8 +24,12 @@
     
 }
 
-
-
+.tem{
+    background-color: blue;
+}
+h2{
+    margin: 0%;
+}
 
 .footer1{
     width: 100%;
